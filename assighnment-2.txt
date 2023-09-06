@@ -1,0 +1,300 @@
+(1)What are the benefits of using CSS?
+Ans:-There are a number of benefits of CSS, including:
+1) Faster Page Speed. More code means slower page speed. ...
+2) Better User Experience. CSS not only makes web pages easy on the eye, it also allows for user-friendly formatting. ...
+3) Quicker Development Time. ...
+4) Easy Formatting Changes. ...
+5) Compatibility Across Devices.
+
+(2)What are the disadvantages of CSS?
+Ans:-Disadvantages of CSS:
+-->CSS, CSS 1 up to CSS3, result in creating of confusion among web browsers.
+-->With CSS, what works with one browser might not always work with another. ...
+-->There exists a scarcity of security.
+-->After making the changes we need to confirm the compatibility if they appear.
+
+(3)What is the difference between CSS2 and CSS3?
+Ans:- CSS: CSS stands for Cascading Style Sheet. Its main objective is to provide styling and fashion to the web page. CSS provides color, layout, background, font, and border properties. CSS features allow better content accessibility, enhanced flexibility, and control, as well as the specification of the characteristics of presentation.
+-->CSS3: CSS3 stands for Cascading Style Sheet level 3, which is the advanced version of CSS. It is used for structuring, styling, and formatting web pages. Several new features have been added to CSS3 and it is supported by all modern web browsers. The most important feature of CSS3 is the splitting of CSS standards into separate modules that are simpler to learn and use.
+
+(4)Name a few CSS style components.
+Ans:--->The components of css style are:
+--->Selector: class name, id name or element name that is target.
+--->Attribute: name of the attribute you want to style for example border, color,background, position etc.
+--->Value of Property: value that will be assigned to attribute.
+
+(5)What do you understand by CSS opacity?
+Ans:- The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.
+
+(6)How can the background color of an element be changed?
+Ans:- To add background color in HTML, use the CSS background-color property. Set it to the color name or code you want and place it inside a style attribute. Then add this style attribute to an HTML element, like a table, heading, div, or span tag.
+
+(7)How can image repetition of the backup be controlled?
+Ans:- This task can be achieved by using the background-repeat property that will help us to control the repetition of the image. The background-repeat property in CSS is used to repeat the background image both horizontally and vertically. It also decides whether the background image will be repeated or not.
+Examole:--->>
+<html> 
+<head>
+    <title>background-repeat property</title>
+    <style>
+        body {
+            margin-top: 40px;
+            background-image: url(
+"https://media.geeksforgeeks.org/wp-content/uploads/geeks-25.png");
+            background-repeat: repeat-x;
+            background-size: 150px 100px;
+        }
+         
+        h1 {
+            text-align: center
+        }
+    </style>
+</head>
+ 
+<body>
+    <h1>GeeksforGeeks</h1>
+</body>
+</html>
+
+(8)What is the use of the background-position property?
+Ans:- Definition and Usage:>>
+The background-position property sets the starting position of a background image. Tip: By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally.
+Example:>>         
+ body {
+  background-image: url('w3css.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+}
+
+(9)Which property controls the image scroll in the background?
+Ans:- The background-attachment property in CSS is used to specify the kind of attachment of the background image with respect to its container. It can be set to scroll or make it remain fixed. It can be applied to all HTML elements.
+
+(10)Why should background and color be used as separate properties?
+Ans:- background is a shorthand property that allows you to set all the background properties (including the background-color ) in one line. On the other hand, background-color property sets the color of the background of an element.There are two reasons behind this: It enhances the legibility of style sheets. The background property is a complex property in CSS, and if it is combined with color, the complexity will further increase.
+
+(11)How to center block elements using CSS1?
+Ans:- The CSS specifications are maintained by the World Wide Web Consortium (W3C). Even though every browser supports CSS, there are many inconsistencies in the supported specification version. Some browsers even have their own implementation of the specification and have proprietary (vendor) prefixes.
+The Specification defines how CSS properties should be implemented by browser vendors along with detailed algorithms, code samples and tabular information. The Specification also include: The syntax and data types of the language. Detailed explanation on CSS Selectors.
+
+(12)What are the ways to integrate CSS as a web page?
+	Inline - by using the style attribute inside HTML elements.
+	Internal - by using a <style> element in the <head> section.
+	External - by using a <link> element to link to an external CSS file.
+
+(13) What is embedded style sheets?
+ANS:-Embedded style sheets refer to when you embed style sheet information into an HTML document using the <style> element. You do this by embedding the style sheet information within <style></style> tags in the head of your document.
+
+(14)What are the external style sheets?
+An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage. Multiple webpages can use the same link to access the stylesheet. The link to an external style sheet is placed within the head section of the page.
+
+(15)What are the advantages and disadvantages of using external style sheets?
+ANS:=External style sheets have the following advantages over internal and inline styles:
+	one change to the style sheet will change all linked pages.
+	you can create classes of styles that can then be used on many different HTML elements.
+	consistent look and feel across multiple web pages.
+
+(16)What is the meaning of the CSS selector?
+ans:-A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them.
+Right-click on the screen. Click on Inspect in the menu that appears. Click on the arrow icon at the top left of the Developer Tools screen. Hover your mouse over the element whose CSS selector you want to obtain.
+
+(17)What are the media types allowed by CSS?
+ANS:-	Value		Description
+	all		Used for all media type devices
+	print		Used for printers
+	screen		Used for computer screens, tablets, smart-phones etc.
+	speech		Used for screenreaders that "reads" the page out loud
+The @media rule is used in media queries to apply different styles for different media types/devices. Media queries can be used to check many things, such as: width and height of the viewport. width and height of the device.
+
+(18) What is the rule set?
+ANS:-A CSS rule set contains one or more selectors and one or more declarations. The selector(s), which in this example is h1 , points to an HTML element. The declaration(s), which in this example are color: blue and text-align: center style the element with a property and value.
+
+(19)Create image gallery using display grid with responsive.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            background-color: black;
+        }
+
+        .div1 {
+            grid-column: 1 / span 2;
+        }
+
+        .div4 {
+            grid-row: 2 / span 2;
+            height: 100%;
+        }
+
+        .div3 {
+            grid-column: 4;
+            grid-row: 1 / span 2;
+            height: 100%;
+        }
+
+        .div6 {
+            grid-row: 2;
+            grid-column: 2 / span 2;
+            width: 100%;
+        }
+
+        .h-img {
+            height:250px;
+            width: 100%;
+        }
+
+        .v-img {
+            height: 100%;
+            width: 260px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div1">
+            <img src="./pexels-photo-3220368.webp" alt="" class="h-img">
+        </div>
+        <div class="div2">
+            <img src="./img5.jpeg" alt="" class="h-img">
+        </div>
+        <div class="div3">
+            <img src="./img2.jpeg" alt="" class="v-img">
+        </div>
+        <div class="div4">
+            <img src="./peimg4.jpeg" alt="" class="v-img">
+        </div>
+        <div class="div5">
+            <img src="./pexels-photo-3220368.webp" alt="" class="h-img">
+        </div>
+        <div class="div6">
+            <img src="./7.webp" alt="" class="h-img">
+        </div>
+        <div class="div7">
+            <img src="img3.jpeg" alt="" class="h-img">
+        </div>
+        <div class="div8">
+            <img src="image8.jpg" alt="" class="h-img">
+        </div>
+        <div class="div9">
+            <img src="image10.jpeg" alt="" class="h-img">
+        </div>
+        <div class="div10">
+            <img src="images11.webp" alt="" class="h-img">
+        </div>
+        <div class="div11">
+            <img src="./img6.webp" alt="" class="h-img">
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+(20)hero image.
+ans:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        img{
+            height:650px;
+            width: 100%;
+        }
+        .heroimg{
+            position: relative;
+        }
+        .herotext{
+            position:absolute;
+            top: 180px;
+            text-align: center;
+            width: 100%;
+            font-size: larger;
+        }
+        .mid1{
+            font: 100px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:black;
+        }
+        .mid1{
+            font-size: 20px;
+            text-transform: capitalize;
+            padding: 10px,0px;
+            text-shadow: 0px 0px 15px;
+        }
+        .mid2{
+            margin: auto;
+        }
+        .mid2{
+            font-size: large;
+            color: black;
+        }
+        .btn1{
+            margin: 10px;
+            height: 40px;
+            width: 150px;
+            background-color: transparent;
+            border-radius: 20px;
+            border: 2px solid white;
+            font-size: 15px;
+            text-shadow: 0px 0px 10px white;
+            color: rgb(43, 42, 43);
+        }
+        .btn1:hover{
+            border: 2px solid transparent;
+            background-color: black;
+            color: aliceblue;
+            transition: ease 1s all;
+        }
+        .btn2{
+            margin: 10px;
+            height: 40px;
+            width: 150px;
+            background-color: transparent;
+            border-radius: 20px;
+            border: 2px solid white;
+            font-size: 15px;
+            text-shadow: 0px 0px 10px white;
+            color: reb(43,42,43);
+        }
+        .btn2:hover{
+            border: 2px solid transparent;
+            background-color: black;
+            color: aliceblue;
+            transition: ease 1s all;
+        }
+    </style>
+</head>
+<body>
+    <div class="heroimg">
+        <img src="./2.jpg"alt="">
+        <div class="herotext">
+            <p>
+                <h1 class="mid1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h1>
+                <h4 class="mid2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum sit cum iure qui, nostrum at sapiente ducimus.</h4>
+            </p>
+            <div>
+                <button class="btn1">Learn More
+                    <i class="fa-solid fa-angles-down"></i>
+                </button>
+                <button class="btn2">Read more
+                    <i class="fa-solid fa-right-long"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
