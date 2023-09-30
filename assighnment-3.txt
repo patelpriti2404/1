@@ -1,0 +1,28 @@
+(1)What are the new tags added in HTML5?
+=>
+Tag		Description
+
+<dialog>		It represents a dialog box or other interactive components.
+<figcaption>	It defines caption for the <figure> element.
+<figure>		It defines a self-contained content, and referenced as a single unit.
+<footer>		It represents the footer section of the webpage.
+
+
+(2)How to embed audio and video in a webpage?
+==>The HTML5 <audio> and <video> tags make it simple to add media to a website. You need to set src attribute to identify the media source and include a controls attribute so the user can play and pause the media.
+
+(3)Semantic element in HTML5?
+==>HTML was originally created as a markup language to describe documents on the early internet. As the internet grew and was adopted by more people, its needs changed.
+
+Where the internet was originally intended for sharing scientific documents, now people wanted to share other things as well. Very quickly, people started wanting to make the web look nicer.
+
+Because the web was not initially built to be designed, programmers used different hacks to get things laid out in different ways. Rather than using the <table></table> to describe information using a table, programmers would use them to position other elements on a page.
+
+As the use of visually designed layouts progressed, programmers started to use a generic “non-semantic” tag like <div>. They would often give these elements a class or id attribute to describe their purpose. For example, instead of <header> this was often written as <div class="header">.
+
+As HTML5 is still relatively new, this use of non-semantic elements is still very common on websites today.
+
+(4)Canvas and SVG tag?
+==>The HTML <svg> element is a container for SVG graphics. SVG stands for Scalable Vector Graphics. SVG and useful for defining graphics such as boxes, circles, text, etc. SVG stands for Scalable Vector Graphics and is a language for describing 2D-graphics and graphical applications in XML and the XML is then rendered by an SVG viewer. Most of the web browsers can display SVG just like they can display PNG, GIF, and JPG.
+
+The HTML <canvas> element is used to draw graphics, via JavaScript. The<canvas> element is a container for graphics.
