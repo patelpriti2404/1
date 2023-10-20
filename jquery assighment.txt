@@ -1,0 +1,62 @@
+(1)What is jquery?
+Ans:--jQuery is a lightweight, "write less, do more", JavaScript library.
+      The purpose of jQuery is to make it much easier to use JavaScript on your website.
+      jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.
+      jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.
+    
+    --> The jQuery library contains the following features:
+          1.HTML/DOM manipulation
+          2.CSS manipulation
+          3.HTML event methods
+          4.Effects and animations
+          5.AJAX
+          6.Utilities
+
+(2)How to apply CSS using JQuery,How to add class and Remove class in jQuery,JQuery Animation?
+Ans:--jQuery Manipulating CSS
+      1.addClass() - Adds one or more classes to the selected elements.
+      2.removeClass() - Removes one or more classes from the selected elements.
+      3.toggleClass() - Toggles between adding/removing classes from the selected elements.
+      4.css() - Sets or returns the style attribute.
+--> The jQuery animate() method is used to create custom animations.
+    The required params parameter defines the CSS properties to be animated.
+    The optional speed parameter specifies the duration of the effect. It can take the following values: "slow", "fast", or milliseconds.
+    The optional callback parameter is a function to be executed after the animation completes.
+    The following example demonstrates a simple use of the animate() method; it moves a <div> element to the right, until it has reached a left property of 250px:
+
+(3)How to create slider with animation?
+Ans:--Step 1: Create the Basic Layout of the Image Slider using HTML Code. Let's create the basic skeleton of our slider. ...
+      Step 2: Add Prev and Next Buttons. Sliders have two buttons previous and next. ...
+      Step 3: Add the Required Images and Text to the Slider. ...
+      Step 4: Activate the Two Buttons using JavaScript Code.
+
+(4)Event bubbling tickling example
+Ans:--Event bubbling is a method of event propagation in the HTML DOM API when an event is in an element inside another element, and both elements have registered a handle to that event. It is a process that starts with the element that triggered the event and then bubbles up to the containing elements in the hierarchy. In event bubbling, the event is first captured and handled by the innermost element and then propagated to outer elements.
+<body> 
+	<h2>Bubbling Event in Javascript</h2> 
+
+	<div id="parent"> 
+		<button> 
+			<h2>Parent</h2> 
+		</button> 
+		<button id="child"> 
+
+			<p>Child</p> 
+
+		</button> 
+	</div><br> 
+
+
+	<script> 
+		document.getElementById( 
+		"child").addEventListener("click", function () { 
+			alert("You clicked the Child element!"); 
+		}, false); 
+		
+		document.getElementById( 
+		"parent").addEventListener("click", function () { 
+			alert("You clicked the parent element!"); 
+		}, false); 
+	</script> 
+
+</body> 
