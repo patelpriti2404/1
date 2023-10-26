@@ -1,0 +1,11 @@
+(1)What are the new tags added in HTML5?
+Ans:--The commonly used new HTML5 tags are <figure>, <article>, <header>, <main>,<footer>, <nav>, and <section>.
+
+(2)How to embed audio and vedio in a webpage?
+Ans:--To embed audio in HTML, we use the <audio> tag. Before HTML5, audio cannot be added to web pages in the Internet Explorer era. To play audio, we used web plugins like Flash. After the release of HTML5, it is possible. This tag supports Chrome, Firefox, Safari, Opera, and Edge in three audio formats – MP3, WAV, OGG. Only Safari browser doesn’t support OGG audio format.
+
+(3)Semantic element in HTML5?
+Ans:--A semantic element clearly describes its meaning to both the browser and the developer. Examples of non-semantic elements: <div> and <span> - Tells nothing about its content. Examples of semantic elements: <form> , <table> , and <article> - Clearly defines its content.
+
+(4)Canvas and SVG tags
+Ans:--He most pertinent difference is how each technology presents its content. Canvas is raster based, meaning it's arrays of pixels arranged on a grid, while SVG is vector based, meaning it uses mathematical metadata when describing a graphic.
