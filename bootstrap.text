@@ -1,0 +1,102 @@
+1.What are the advantages of Bootstrap?
+=>Easy to prevent repetitions among multiple projects.
+Responsive design that can be used to adapt screen sizes and choose what shows and what doesn't on any given device.
+Maintaining consistency among projects when using multiple developer teams.
+Quick design of prototypes.
+
+2.What is a Bootstrap Container, and how does it work?
+=>Containers are the most basic layout element in Bootstrap and are required when using our default grid system. Containers are used to contain, pad, and (sometimes) center the content within them. While containers can be nested, most layouts do not require a nested container.
+
+3. What are the default Bootstrap text settings?
+=>Bootstrap 4 Default Settings
+Bootstrap 4 uses a default font-size of 16px, and its line-height is 1.5. The default font-family is "Helvetica Neue", Helvetica, Arial, sans-serif. In addition, all <p> elements have margin-top: 0 and margin-bottom: 1rem (16px by default).
+
+4.What do you know about the Bootstrap Grid System?
+=>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together.
+
+New to or unfamiliar with flexbox? Read this CSS Tricks flexbox guide for background, terminology, guidelines, and code snippets.
+ex:<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+  </div>
+</div>
+
+5.What is the difference between Bootstrap 4 and Bootstrap 5
+=>Bootstrap 5 has six levels: xs, sm, md, lg, xl, and xxl. Bootstrap 4 includes jquery and all associated plug-ins. Jquery has been deleted and replaced with vanilla JS and several functional plug-ins in Bootstrap 5. Bootstrap 4 provides a few colors for a web page.
+
+6.What is a Button Group, and what is the class for a basic Button Group?
+=>“Button Groups” in Bootstrap is a class of name “btn-group” which is used to create a series of buttons in groups (without spaces) vertically or horizontally. Syntax: This is the basic syntax of the button group class where each button has its own class of “btn”.
+
+Syntax: This is the basic syntax of the button group class where each button has its own class of “btn”.
+
+<div class="btn-group">
+    <button type="button" class="btn">Click</button>
+</div>
+
+7. How can you use Bootstrap to make thumbnails?
+=.>Add an <a> tag with the class of . thumbnail around an image.
+This adds four pixels of padding and a gray border.
+On hover, an animated glow outlines the image.
+ex:
+<div class = "row">
+   <div class = "col-sm-6 col-md-3">
+      <a href = "#" class = "thumbnail">
+         <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+      </a>
+   </div>
+   
+   <div class = "col-sm-6 col-md-3">
+      <a href = "#" class = "thumbnail">
+         <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+      </a>
+   </div>
+   
+   <div class = "col-sm-6 col-md-3">
+      <a href = "#" class = "thumbnail">
+         <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+      </a>
+   </div>
+   
+   <div class = "col-sm-6 col-md-3">
+      <a href = "#" class = "thumbnail">
+         <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+      </a>
+   </div>
+</div>
+
+8.In Bootstrap 4, what is flexbox?
+=>Flexbox. The biggest difference between Bootstrap 3 and Bootstrap 4 is that Bootstrap 4 now uses flexbox, instead of floats, to handle the layout. The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.
+ex:<div class="d-flex p-3 bg-secondary text-white">
+  <div class="p-2 bg-info">Flex item 1</div>
+  <div class="p-2 bg-warning">Flex item 2</div>
+  <div class="p-2 bg-primary">Flex item 3</div>
+</div>
+
+
+9.How can one create an alert in Bootstrap?
+=>Be sure you've loaded the alert plugin, or the compiled Bootstrap JavaScript.
+If you're building our JavaScript from source, it requires util.js . ...
+Add a dismiss button and the .alert-dismissible class, which adds extra padding to the right of the alert and positions the .close button.
+
+10.What is a bootstrap card and how would you create one?
+=>A Bootstrap card is a bordered container that can be used to display content. It can contain a header, footer, images, titles, links, and other Bootstrap elements. 
+To create a Bootstrap card, you can use the .card class with the .card-body class nested inside. This creates a card with a rounded border. You can then place text, images, links, and other Bootstrap elements inside the card. 
+Bootstrap cards are responsive and customizable. They can be used in a single container called card. You can also separate cards using .row-cols-1 to lay out the cards on one column, and .row-cols-md-2 to split four cards to equal width across multiple rows. 
+You can also center a card by dividing the remaining division of the screen by two. For example, if you have a card with a class col-6, you can center it by setting it to offset-3. 
+
+ex:<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
